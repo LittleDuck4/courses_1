@@ -6,7 +6,7 @@ if text.isdigit():
     else:
         print("this number is odd, btw")
 elif text.isalpha():
-    print("you wrote the words, good job!")
-    print("the length of your sentence is:", len(text))
+    print("you wrote the word, good job!")
+    print("the length of your word is:", len(text))
 else:
     print("ok, you can write anything, but not this")
