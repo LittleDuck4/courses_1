@@ -3,8 +3,9 @@ from datetime import datetime
 
 def decor(func):
     def wrap(*args, **kwargs):
-        func(*args, **kwargs)
+        result = func(*args, **kwargs)
         print(f"function: {func.__name__}, time of call: {datetime.now()}")
+        return result
 
     return wrap
 
